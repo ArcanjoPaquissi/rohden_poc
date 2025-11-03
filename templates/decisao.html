@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+{% block title %}Decisão - POC Rohden{% endblock %}
+{% block content %}
+<div class="max-w-5xl mx-auto">
+  <h1 class="text-4xl font-bold text-cyan-400 mb-4">Recomendação Estratégica</h1>
+  <p class="text-xl text-gray-300 mb-8">Baseada em dados, testes e análise de viabilidade</p>
+
+  <!-- Recomendação Principal -->
+  <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-10 text-center mb-8">
+    <div class="text-6xl mb-4">✅</div>
+    <h2 class="text-4xl font-bold mb-4">SEGUIR EM FRENTE</h2>
+    <p class="text-xl">A POC comprovou viabilidade técnica, econômica e estratégica. Recomendamos evolução para Fase 2 com ajustes.</p>
+  </div>
+
+  <!-- Justificativa -->
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-cyan-500">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-6">📋 Justificativa da Decisão</h2>
+    <div class="space-y-4 text-gray-300">
+      <div class="flex items-start">
+        <span class="text-green-400 text-2xl mr-3">✓</span>
+        <div>
+          <h3 class="font-bold">Métricas Superaram Expectativas</h3>
+          <p class="text-sm">Meta era +50% em obras identificadas; alcançamos +189%. Taxa de conversão bateu 38% vs. meta de 25%.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start">
+        <span class="text-green-400 text-2xl mr-3">✓</span>
+        <div>
+          <h3 class="font-bold">ROI Comprovadamente Positivo</h3>
+          <p class="text-sm">Mesmo no cenário pessimista, o projeto se paga em 18 meses. No realista, em 10 meses com ROI de 245%.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start">
+        <span class="text-green-400 text-2xl mr-3">✓</span>
+        <div>
+          <h3 class="font-bold">Feedback Positivo da Equipe</h3>
+          <p class="text-sm">100% dos vendedores participantes aprovaram a ferramenta. Relataram aumento de confiança e produtividade.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start">
+        <span class="text-green-400 text-2xl mr-3">✓</span>
+        <div>
+          <h3 class="font-bold">Alinhamento Estratégico</h3>
+          <p class="text-sm">Fortalece posicionamento da Rohden como empresa inovadora e preparada para demandas ESG e digitalização.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Próximos Passos (Fase 2) -->
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-purple-500">
+    <h2 class="text-2xl font-bold text-purple-400 mb-6">🚀 Fase 2: Protótipo e Validação (12 meses)</h2>
+    <div class="space-y-4 text-gray-300">
+      <div>
+        <h3 class="font-bold text-cyan-400 mb-2">1. Expansão de Funcionalidades</h3>
+        <ul class="list-disc list-inside ml-4 text-sm space-y-1">
+          <li>Implementar módulo de IA preditiva para sugestão de abordagens</li>
+          <li>Integrar plataforma ao CRM existente (conexão bidirecional)</li>
+          <li>Adicionar alertas via WhatsApp e notificações push</li>
+          <li>Desenvolver app mobile para acesso em campo</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-cyan-400 mb-2">2. Escala Gradual</h3>
+        <ul class="list-disc list-inside ml-4 text-sm space-y-1">
+          <li>Expandir para toda equipe comercial (12 vendedores)</li>
+          <li>Testar em 2 novas regiões (Sudeste e Centro-Oeste)</li>
+          <li>Aumentar cobertura de fontes de dados em 40%</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-cyan-400 mb-2">3. Governança e Melhoria Contínua</h3>
+        <ul class="list-disc list-inside ml-4 text-sm space-y-1">
+          <li>Criar comitê de acompanhamento mensal (comercial + TI)</li>
+          <li>Implementar ciclos de feedback a cada trimestre</li>
+          <li>Auditorias de compliance LGPD semestrais</li>
+          <li>Programa de incentivos para uso efetivo da plataforma</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-cyan-400 mb-2">4. Investimento Estimado (Fase 2)</h3>
+        <p class="text-sm">
+          <strong class="text-yellow-400">R$ 1,2M - R$ 1,5M</strong> ao longo de 12 meses, incluindo:
+        </p>
+        <ul class="list-disc list-inside ml-4 text-sm space-y-1 mt-2">
+          <li>Desenvolvimento de novas features: R$ 550k</li>
+          <li>Infraestrutura e licenças: R$ 320k</li>
+          <li>Treinamento e change management: R$ 180k</li>
+          <li>Consultoria e suporte: R$ 250k</li>
+          <li>Contingência (15%): R$ 200k</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ajustes Necessários -->
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-yellow-500">
+    <h2 class="text-2xl font-bold text-yellow-400 mb-6">🔧 Ajustes Recomendados</h2>
+    <div class="space-y-4 text-gray-300">
+      <div>
+        <h3 class="font-bold text-yellow-400 mb-2">1. Qualidade de Dados</h3>
+        <p class="text-sm">
+          Investir em validação automática e limpeza de dados. Cerca de 18% dos registros da POC tinham informações incompletas. 
+          Implementar mecanismos de verificação cruzada entre fontes.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-yellow-400 mb-2">2. Usabilidade</h3>
+        <p class="text-sm">
+          Simplificar interface baseado em feedback dos vendedores. Reduzir número de cliques para ações principais. 
+          Adicionar tutoriais interativos e tooltips contextuais.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-yellow-400 mb-2">3. Performance</h3>
+        <p class="text-sm">
+          Otimizar tempo de carregamento de dashboards (atualmente 4-6 segundos). 
+          Meta: reduzir para menos de 2 segundos. Implementar cache inteligente.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-yellow-400 mb-2">4. Change Management</h3>
+        <p class="text-sm">
+          Criar programa estruturado de onboarding. Designar "embaixadores" da ferramenta em cada equipe regional. 
+          Estabelecer KPIs individuais atrelados ao uso da plataforma.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Critérios de Abandono -->
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-red-500">
+    <h2 class="text-2xl font-bold text-red-400 mb-6">🚫 Quando Considerar Abandonar (Fase 2)</h2>
+    <p class="text-gray-300 mb-4">
+      A Fase 2 deve ser interrompida se algum dos seguintes cenários se concretizar:
+    </p>
+    <div class="space-y-3 text-gray-300">
+      <div class="flex items-start">
+        <span class="text-red-400 mr-3">✗</span>
+        <p class="text-sm">
+          <strong>ROI negativo após 9 meses:</strong> Se o retorno projetado não se materializar em pelo menos 60% do previsto.
+        </p>
+      </div>
+      <div class="flex items-start">
+        <span class="text-red-400 mr-3">✗</span>
+        <p class="text-sm">
+          <strong>Resistência insuperável da equipe:</strong> Se menos de 50% dos vendedores adotarem a ferramenta após treinamento intensivo.
+        </p>
+      </div>
+      <div class="flex items-start">
+        <span class="text-red-400 mr-3">✗</span>
+        <p class="text-sm">
+          <strong>Problemas regulatórios:</strong> Mudanças na LGPD ou outras leis que tornem o modelo inviável sem investimentos proibitivos.
+        </p>
+      </div>
+      <div class="flex items-start">
+        <span class="text-red-400 mr-3">✗</span>
+        <p class="text-sm">
+          <strong>Fontes de dados inacessíveis:</strong> Se as bases públicas/privadas essenciais se tornarem pagas ou indisponíveis.
+        </p>
+      </div>
+      <div class="flex items-start">
+        <span class="text-red-400 mr-3">✗</span>
+        <p class="text-sm">
+          <strong>Custos de manutenção insustentáveis:</strong> Se os custos operacionais mensais superarem R$ 80k (200% do previsto).
+        </p>
+      </div>
+    </div>
+    <p class="text-gray-400 text-sm italic mt-4">
+      ⚠️ Recomenda-se checkpoint formal no 6º mês da Fase 2 para reavaliação estratégica.
+    </p>
+  </div>
+
+  <!-- Riscos e Mitigação -->
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-orange-500">
+    <h2 class="text-2xl font-bold text-orange-400 mb-6">⚠️ Gestão de Riscos</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="bg-gray-900 p-4 rounded-lg">
+        <h3 class="font-bold text-red-400 mb-2">Risco: Dependência de Terceiros</h3>
+        <p class="text-sm text-gray-300 mb-2">APIs de fornecedores podem ficar indisponíveis ou mudar regras.</p>
+        <p class="text-xs text-green-400"><strong>Mitigação:</strong> Diversificar fontes. Manter backups locais de dados críticos.</p>
+      </div>
+
+      <div class="bg-gray-900 p-4 rounded-lg">
+        <h3 class="font-bold text-red-400 mb-2">Risco: Concorrência Ágil</h3>
+        <p class="text-sm text-gray-300 mb-2">Competidores podem adotar soluções similares rapidamente.</p>
+        <p class="text-xs text-green-400"><strong>Mitigação:</strong> Vantagem do first-mover. Foco em diferenciação e qualidade dos dados.</p>
+      </div>
+
+      <div class="bg-gray-900 p-4 rounded-lg">
+        <h3 class="font-bold text-red-400 mb-2">Risco: Resistência Cultural</h3>
+        <p class="text-sm text-gray-300 mb-2">Equipe pode rejeitar mudança de processos estabelecidos.</p>
+        <p class="text-xs text-green-400"><strong>Mitigação:</strong> Programa de incentivos. Demonstrar ganhos reais. Liderar pelo exemplo.</p>
+      </div>
+
+      <div class="bg-gray-900 p-4 rounded-lg">
+        <h3 class="font-bold text-red-400 mb-2">Risco: Alterações Regulatórias</h3>
+        <p class="text-sm text-gray-300 mb-2">Mudanças na LGPD podem exigir adaptações custosas.</p>
+        <p class="text-xs text-green-400"><strong>Mitigação:</strong> Consultoria jurídica preventiva. Design privacy-by-default.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cronograma de Decisão -->
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-cyan-500">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-6">📅 Cronograma de Decisão</h2>
+    <div class="space-y-3 text-gray-300">
+      <div class="flex justify-between items-center p-3 bg-gray-900 rounded">
+        <span><strong>Até 15/07/2025:</strong> Aprovação da diretoria para Fase 2</span>
+        <span class="bg-yellow-500 text-gray-900 px-3 py-1 rounded text-sm font-bold">Pendente</span>
+      </div>
+      <div class="flex justify-between items-center p-3 bg-gray-900 rounded">
+        <span><strong>01/08/2025:</strong> Início do desenvolvimento da Fase 2</span>
+        <span class="bg-gray-600 text-white px-3 py-1 rounded text-sm">Planejado</span>
+      </div>
+      <div class="flex justify-between items-center p-3 bg-gray-900 rounded">
+        <span><strong>01/02/2026:</strong> Checkpoint de 6 meses (go/no-go)</span>
+        <span class="bg-gray-600 text-white px-3 py-1 rounded text-sm">Planejado</span>
+      </div>
+      <div class="flex justify-between items-center p-3 bg-gray-900 rounded">
+        <span><strong>01/08/2026:</strong> Avaliação final e decisão de escala completa</span>
+        <span class="bg-gray-600 text-white px-3 py-1 rounded text-sm">Planejado</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conclusão -->
+  <div class="bg-gradient-to-r from-cyan-600 to-purple-600 rounded-xl p-8 text-center mb-8">
+    <h2 class="text-3xl font-bold mb-4">💼 Conclusão</h2>
+    <p class="text-lg mb-6">
+      A POC demonstrou que a Plataforma de Inteligência de Mercado é <strong>viável, necessária e estratégica</strong> para a Rohden. 
+      Os resultados superam expectativas e o investimento se justifica tanto financeiramente quanto competitivamente.
+    </p>
+    <p class="text-md">
+      <strong>Recomendação:</strong> Aprovar evolução para Fase 2 com orçamento de R$ 1,2M - R$ 1,5M, 
+      implementando os ajustes sugeridos e mantendo governança rigorosa.
+    </p>
+  </div>
+
+  <!-- Equipe -->
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-gray-700">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4 text-center">👥 Equipe do Projeto</h2>
+    <div class="grid md:grid-cols-4 gap-4 text-center text-gray-300">
+      <div>
+        <div class="text-3xl mb-2">👨‍💼</div>
+        <p class="font-bold">Arcanjo Feliciano</p>
+        <p class="text-sm text-gray-400">Desenvolvimento</p>
+      </div>
+      <div>
+        <div class="text-3xl mb-2">👩‍💼</div>
+        <p class="font-bold">Gabriela Moreira</p>
+        <p class="text-sm text-gray-400">Gestão de Projeto</p>
+      </div>
+      <div>
+        <div class="text-3xl mb-2">👨‍💼</div>
+        <p class="font-bold">Raphael Cortez</p>
+        <p class="text-sm text-gray-400">Analista de Dados</p>
+      </div>
+      <div>
+        <div class="text-3xl mb-2">👩‍💼</div>
+        <p class="font-bold">Yasmin Nunes</p>
+        <p class="text-sm text-gray-400"> Pesquisa de Mercado</p>
+      </div>
+    </div>
+    <p class="text-center text-gray-400 text-sm mt-6">
+      UFSC - Empreendedorismo II | Desafio PROTALENT - FIESC | 2025
+    </p>
+  </div>
+
+  <!-- Botões de Ação -->
+  <div class="flex justify-center gap-4 mt-8">
+    <a href="/" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg transition">
+      ← Voltar ao Início
+    </a>
+    <a href="/dashboard" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg transition">
+      Ver Dashboard →
+    </a>
+  </div>
+</div>
+{% endblock %}

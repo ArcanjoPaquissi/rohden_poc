@@ -1,0 +1,88 @@
+<!-- 
+=====================================================
+ARQUIVO 3: templates/como_funciona.html
+=====================================================
+-->
+{% extends "base.html" %}
+{% block title %}Como Funciona - POC Rohden{% endblock %}
+{% block content %}
+<div class="max-w-5xl mx-auto">
+  <h1 class="text-4xl font-bold text-cyan-400 mb-8">Como a Rohden Usaria Esta Plataforma?</h1>
+
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-cyan-500">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">Cenário Real de Uso</h2>
+    <p class="text-gray-300 mb-4">
+      A equipe comercial da Rohden acessa o sistema todas as manhãs. O dashboard mostra <strong class="text-cyan-400">52 novas obras</strong> 
+      identificadas na região Sul nas últimas 48 horas, filtradas por critérios como "alto padrão", "edifícios residenciais" e "fase de aprovação".
+    </p>
+    <p class="text-gray-300">
+      Cada obra traz informações sobre: <strong class="text-green-400">responsável técnico, construtora, localização, porte estimado e contatos</strong>. 
+      O vendedor então aciona o stakeholder cadastrado antes mesmo da concorrência saber que a obra existe.
+    </p>
+  </div>
+
+  <!-- Passo a Passo -->
+  <div class="space-y-6 mb-12">
+    <div class="bg-gray-800 rounded-xl p-6 border-l-4 border-cyan-500">
+      <h3 class="text-xl font-bold text-cyan-400 mb-2">1. Coleta Automatizada de Dados</h3>
+      <p class="text-gray-300">
+        Sistema integra dados de prefeituras, órgãos ambientais, registros de imóveis e bases privadas (CASOCA, SNO). 
+        Atualização diária garante que nenhuma oportunidade seja perdida.
+      </p>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl p-6 border-l-4 border-green-500">
+      <h3 class="text-xl font-bold text-green-400 mb-2">2. Filtros Inteligentes</h3>
+      <p class="text-gray-300">
+        O usuário define critérios como região, padrão da obra, tipo de construção e fase do projeto. 
+        A plataforma exibe apenas obras relevantes para o perfil comercial da Rohden.
+      </p>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl p-6 border-l-4 border-purple-500">
+      <h3 class="text-xl font-bold text-purple-400 mb-2">3. Alertas em Tempo Real</h3>
+      <p class="text-gray-300">
+        Quando uma obra vinculada a um arquiteto ou construtora cadastrada entra no sistema, 
+        o vendedor recebe notificação automática por e-mail ou WhatsApp.
+      </p>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl p-6 border-l-4 border-yellow-500">
+      <h3 class="text-xl font-bold text-yellow-400 mb-2">4. Proposta Personalizada</h3>
+      <p class="text-gray-300">
+        Com base em projetos anteriores semelhantes, o sistema sugere soluções já testadas, 
+        permitindo que o vendedor monte uma proposta assertiva em minutos.
+      </p>
+    </div>
+  </div>
+
+  <!-- Módulos da Plataforma -->
+  <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-6">Módulos da Plataforma</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="bg-gray-900 p-4 rounded-lg">
+        <h3 class="font-bold text-cyan-400 mb-2">📍 Radar de Obras</h3>
+        <p class="text-sm text-gray-300">Mapa interativo com todas as obras identificadas, filtráveis por região e status.</p>
+      </div>
+      <div class="bg-gray-900 p-4 rounded-lg">
+        <h3 class="font-bold text-green-400 mb-2">👥 Gestão de Stakeholders</h3>
+        <p class="text-sm text-gray-300">Cadastro de arquitetos, engenheiros e construtoras com histórico de interações.</p>
+      </div>
+      <div class="bg-gray-900 p-4 rounded-lg">
+        <h3 class="font-bold text-purple-400 mb-2">📊 Analytics</h3>
+        <p class="text-sm text-gray-300">Relatórios de desempenho comercial, taxa de conversão e pipeline de vendas.</p>
+      </div>
+      <div class="bg-gray-900 p-4 rounded-lg">
+        <h3 class="font-bold text-yellow-400 mb-2">🤖 IA Preditiva</h3>
+        <p class="text-sm text-gray-300">Sugestões de abordagem baseadas em histórico de projetos bem-sucedidos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-8">
+    <a href="/dashboard" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg transition">
+      Ver Dashboard com Dados →
+    </a>
+  </div>
+</div>
+{% endblock %}

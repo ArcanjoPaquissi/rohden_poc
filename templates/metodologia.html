@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% block title %}Metodologia - POC Rohden{% endblock %}
+{% block content %}
+<div class="max-w-6xl mx-auto">
+  <h1 class="text-4xl font-bold text-cyan-400 mb-8">Metodologia da POC</h1>
+
+  <!-- Timeline -->
+  <div class="bg-gray-800 rounded-xl p-6 mb-8 border border-gray-700">
+    {{ graph|safe }}
+  </div>
+
+  <!-- Fases Detalhadas -->
+  <div class="space-y-6">
+    <!-- Fase 1 -->
+    <div class="bg-gray-800 rounded-xl p-6 border-l-4 border-green-500">
+      <div class="flex items-start justify-between mb-4">
+        <h2 class="text-2xl font-bold text-green-400">Fase 1: Planejamento e Pesquisa Inicial</h2>
+        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">✓ Concluído</span>
+      </div>
+      <div class="space-y-3 text-gray-300">
+        <p><strong class="text-cyan-400">Duração:</strong> 30 dias (Janeiro 2025)</p>
+        <p><strong class="text-cyan-400">Atividades:</strong></p>
+        <ul class="list-disc list-inside space-y-2 ml-4">
+          <li>Entrevistas com equipe comercial para mapear dores e processos atuais</li>
+          <li>Análise de dados históricos (últimos 36 meses de prospecção)</li>
+          <li>Pesquisa de fontes de dados públicas e privadas disponíveis</li>
+          <li>Estudo de viabilidade técnica e regulatória (LGPD)</li>
+          <li>Definição de KPIs e critérios de sucesso</li>
+        </ul>
+        <p><strong class="text-cyan-400">Entregas:</strong> Documento de requisitos, matriz SWOT, cronograma detalhado</p>
+      </div>
+    </div>
+
+    <!-- Fase 2 -->
+    <div class="bg-gray-800 rounded-xl p-6 border-l-4 border-green-500">
+      <div class="flex items-start justify-between mb-4">
+        <h2 class="text-2xl font-bold text-green-400">Fase 2: Desenvolvimento do Protótipo</h2>
+        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">✓ Concluído</span>
+      </div>
+      <div class="space-y-3 text-gray-300">
+        <p><strong class="text-cyan-400">Duração:</strong> 60 dias (Fevereiro-Março 2025)</p>
+        <p><strong class="text-cyan-400">Atividades:</strong></p>
+        <ul class="list-disc list-inside space-y-2 ml-4">
+          <li>Integração inicial com bases de dados (prefeituras, CASOCA, SNO)</li>
+          <li>Desenvolvimento de dashboards e filtros básicos</li>
+          <li>Criação do módulo de gestão de stakeholders</li>
+          <li>Implementação de alertas automáticos via e-mail</li>
+          <li>Testes internos com dados simulados</li>
+        </ul>
+        <p><strong class="text-cyan-400">Entregas:</strong> Protótipo funcional, documentação técnica, manual do usuário</p>
+      </div>
+    </div>
+
+    <!-- Fase 3 -->
+    <div class="bg-gray-800 rounded-xl p-6 border-l-4 border-yellow-500">
+      <div class="flex items-start justify-between mb-4">
+        <h2 class="text-2xl font-bold text-yellow-400">Fase 3: Testes e Validação</h2>
+        <span class="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm">⚙ Em Andamento</span>
+      </div>
+      <div class="space-y-3 text-gray-300">
+        <p><strong class="text-cyan-400">Duração:</strong> 45 dias (Abril-Maio 2025)</p>
+        <p><strong class="text-cyan-400">Atividades:</strong></p>
+        <ul class="list-disc list-inside space-y-2 ml-4">
+          <li>Teste piloto com 3 vendedores em ambiente real</li>
+          <li>Coleta semanal de feedback e métricas de uso</li>
+          <li>Ajustes técnicos e correção de bugs</li>
+          <li>Comparação de resultados com baseline (método tradicional)</li>
+          <li>Análise de custo-benefício preliminar</li>
+        </ul>
+        <p><strong class="text-cyan-400">Entregas:</strong> Relatório de desempenho, lista de melhorias prioritárias</p>
+        <p><strong class="text-green-400">Status Atual:</strong> 68% concluído | Próxima entrega: 15/05/2025</p>
+      </div>
+    </div>
+
+    <!-- Fase 4 -->
+    <div class="bg-gray-800 rounded-xl p-6 border-l-4 border-gray-600">
+      <div class="flex items-start justify-between mb-4">
+        <h2 class="text-2xl font-bold text-gray-400">Fase 4: Avaliação de Resultados</h2>
+        <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-sm">⏳ Aguardando</span>
+      </div>
+      <div class="space-y-3 text-gray-300">
+        <p><strong class="text-cyan-400">Duração:</strong> 30 dias (Junho 2025)</p>
+        <p><strong class="text-cyan-400">Atividades:</strong></p>
+        <ul class="list-disc list-inside space-y-2 ml-4">
+          <li>Análise final de KPIs (obras identificadas, conversão, ROI)</li>
+          <li>Entrevistas de satisfação com usuários</li>
+          <li>Validação de conformidade regulatória (LGPD, ESG)</li>
+          <li>Projeção de custos para escala completa</li>
+          <li>Elaboração de business case para decisão final</li>
+        </ul>
+        <p><strong class="text-cyan-400">Entregas:</strong> Relatório executivo, recomendação estratégica (seguir/ajustar/abandonar)</p>
+      </div>
+    </div>
+
+    <!-- Fase 5 -->
+    <div class="bg-gray-800 rounded-xl p-6 border-l-4 border-gray-600">
+      <div class="flex items-start justify-between mb-4">
+        <h2 class="text-2xl font-bold text-gray-400">Fase 5: Decisão Estratégica</h2>
+        <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-sm">⏳ Aguardando</span>
+      </div>
+      <div class="space-y-3 text-gray-300">
+        <p><strong class="text-cyan-400">Duração:</strong> 15 dias (Julho 2025)</p>
+        <p><strong class="text-cyan-400">Atividades:</strong></p>
+        <ul class="list-disc list-inside space-y-2 ml-4">
+          <li>Apresentação dos resultados à diretoria</li>
+          <li>Análise de cenários (otimista, realista, pessimista)</li>
+          <li>Definição de roadmap para escala (se aprovado)</li>
+          <li>Planejamento de investimentos para os próximos 12 meses</li>
+        </ul>
+        <p><strong class="text-cyan-400">Entregas:</strong> Decisão final e plano de ação</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Limitações da POC -->
+  <div class="bg-gray-800 rounded-xl p-8 mt-8 border border-red-500">
+    <h2 class="text-2xl font-bold text-red-400 mb-4">⚠️ Limitações e Escopo da POC</h2>
+    <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+      <div>
+        <h3 class="font-bold text-cyan-400 mb-2">Escopo Limitado</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Apenas 3 vendedores participantes</li>
+          <li>Foco exclusivo na região Sul</li>
+          <li>Integração parcial de bases de dados</li>
+          <li>Funcionalidades básicas (sem IA preditiva avançada)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-yellow-400 mb-2">Riscos Conhecidos</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Qualidade variável de dados públicos</li>
+          <li>Possível resistência da equipe comercial</li>
+          <li>Dependência de fornecedores externos (APIs)</li>
+          <li>Necessidade de ajustes regulatórios (LGPD)</li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-4 text-gray-400 italic">
+      Esta POC é um teste inicial. Resultados promissores não garantem sucesso em escala, mas fornecem evidências suficientes para decisão informada.
+    </p>
+  </div>
+
+  <div class="text-center mt-8">
+    <a href="/custos" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg transition">
+      Ver Custos e ROI →
+    </a>
+  </div>
+</div>
+{% endblock %}

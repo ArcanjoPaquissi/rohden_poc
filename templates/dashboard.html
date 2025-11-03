@@ -1,0 +1,72 @@
+<!-- 
+=====================================================
+ARQUIVO 4: templates/dashboard.html
+=====================================================
+-->
+{% extends "base.html" %}
+{% block title %}Dashboard - POC Rohden{% endblock %}
+{% block content %}
+<div class="max-w-7xl mx-auto">
+  <h1 class="text-4xl font-bold text-cyan-400 mb-8">Dashboard de Oportunidades</h1>
+
+  <!-- KPIs -->
+  <div class="grid md:grid-cols-3 gap-6 mb-8">
+    <div class="bg-gradient-to-br from-cyan-600 to-cyan-800 rounded-xl p-6 text-center">
+      <div class="text-5xl font-bold">{{ total_obras }}</div>
+      <div class="text-lg mt-2">Obras Identificadas</div>
+      <div class="text-sm text-cyan-200 mt-1">Últimos 90 dias</div>
+    </div>
+
+    <div class="bg-gradient-to-br from-green-600 to-green-800 rounded-xl p-6 text-center">
+      <div class="text-5xl font-bold">R$ {{ "%.1f"|format(receita_potencial) }}M</div>
+      <div class="text-lg mt-2">Receita Potencial</div>
+      <div class="text-sm text-green-200 mt-1">Estimativa conservadora</div>
+    </div>
+
+    <div class="bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl p-6 text-center">
+      <div class="text-5xl font-bold">38%</div>
+      <div class="text-lg mt-2">Taxa de Conversão</div>
+      <div class="text-sm text-purple-200 mt-1">+153% vs. método anterior</div>
+    </div>
+  </div>
+
+  <!-- Gráficos -->
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+      {{ graph1|safe }}
+    </div>
+    <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+      {{ graph2|safe }}
+    </div>
+  </div>
+
+  <!-- Insights -->
+  <div class="bg-gray-800 rounded-xl p-8 mt-8 border border-cyan-500">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">📌 Insights Estratégicos</h2>
+    <ul class="space-y-3 text-gray-300">
+      <li class="flex items-start">
+        <span class="text-green-400 mr-2">✓</span>
+        <span><strong>Região Sul concentra 43% das oportunidades</strong> - reforça a estratégia atual de atuação focada.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-green-400 mr-2">✓</span>
+        <span><strong>Sudeste representa R$ 8,2M em potencial</strong> - sinal para expansão gradual com baixo risco.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-yellow-400 mr-2">⚠</span>
+        <span><strong>Norte e Nordeste ainda subexplorados</strong> - avaliar viabilidade logística e custos.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-cyan-400 mr-2">→</span>
+        <span><strong>Próximo passo:</strong> Testar abordagem comercial diferenciada para obras do Sudeste.</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="text-center mt-8">
+    <a href="/comparativo" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg transition">
+      Ver Comparativo Antes/Depois →
+    </a>
+  </div>
+</div>
+{% endblock %}

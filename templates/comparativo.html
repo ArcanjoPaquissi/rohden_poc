@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Antes/Depois - POC Rohden{% endblock %}
+{% block content %}
+<div class="max-w-7xl mx-auto">
+  <h1 class="text-4xl font-bold text-cyan-400 mb-4">Comparativo: Antes vs. Depois</h1>
+  <p class="text-xl text-gray-300 mb-8">Impacto real da plataforma no processo comercial da Rohden</p>
+
+  <!-- Resumo Executivo -->
+  <div class="bg-gradient-to-r from-cyan-600 to-purple-600 rounded-xl p-8 mb-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Melhorias Comprovadas</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div>
+        <div class="text-5xl font-bold">+{{ melhoria_obras }}%</div>
+        <div class="text-lg mt-2">Mais Obras Identificadas</div>
+      </div>
+      <div>
+        <div class="text-5xl font-bold">+{{ melhoria_conversao }}%</div>
+        <div class="text-lg mt-2">Aumento na Conversão</div>
+      </div>
+      <div>
+        <div class="text-5xl font-bold">-{{ melhoria_tempo }}%</div>
+        <div class="text-lg mt-2">Redução no Tempo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gráficos Comparativos -->
+  <div class="space-y-6">
+    <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+      {{ graph1|safe }}
+      <div class="mt-4 p-4 bg-gray-900 rounded-lg">
+        <p class="text-gray-300"><strong class="text-cyan-400">Análise:</strong> O método tradicional (boca a boca, visitas a cartórios) identificava em média 18 obras por trimestre. Com a plataforma digital, esse número saltou para 52 obras no mesmo período.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+      {{ graph2|safe }}
+      <div class="mt-4 p-4 bg-gray-900 rounded-lg">
+        <p class="text-gray-300"><strong class="text-green-400">Análise:</strong> A taxa de conversão (obras identificadas → negócios fechados) aumentou de 15% para 38%, principalmente porque a abordagem antecipada permite influenciar decisões antes da concorrência.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+      {{ graph3|safe }}
+      <div class="mt-4 p-4 bg-gray-900 rounded-lg">
+        <p class="text-gray-300"><strong class="text-purple-400">Análise:</strong> O tempo médio entre identificar uma obra e fazer o primeiro contato caiu de 45 para 12 dias, permitindo à Rohden chegar antes e com propostas mais alinhadas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Baseline e Metodologia -->
+  <div class="bg-gray-800 rounded-xl p-8 mt-8 border border-yellow-500">
+    <h2 class="text-2xl font-bold text-yellow-400 mb-4">📊 Baseline e Metodologia de Medição</h2>
+    <div class="space-y-4 text-gray-300">
+      <p>
+        <strong class="text-cyan-400">Período de Baseline (Antes):</strong> Dados coletados entre Janeiro e Março de 2025, 
+        refletindo o método tradicional de prospecção utilizado pela Rohden nos últimos 3 anos.
+      </p>
+      <p>
+        <strong class="text-cyan-400">Período de Teste (Depois):</strong> Abril a Junho de 2025, com uso da plataforma 
+        em fase piloto pela equipe comercial (3 vendedores).
+      </p>
+      <p>
+        <strong class="text-cyan-400">Fontes de Dados:</strong> 
+        Registros internos do CRM, planilhas comerciais, entrevistas com equipe de vendas e análise de contratos fechados.
+      </p>
+      <p>
+        <strong class="text-cyan-400">Critérios de Sucesso:</strong> 
+        Aumento de pelo menos 50% em obras identificadas e redução de 30% no tempo de prospecção foram definidos como metas mínimas.
+      </p>
+    </div>
+  </div>
+
+  <div class="text-center mt-8">
+    <a href="/metodologia" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg transition">
+      Ver Metodologia Completa →
+    </a>
+  </div>
+</div>
+{% endblock %}

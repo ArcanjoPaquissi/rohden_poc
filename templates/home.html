@@ -1,0 +1,68 @@
+<!-- 
+=====================================================
+ARQUIVO 2: templates/home.html
+=====================================================
+-->
+{% extends "base.html" %}
+{% block title %}POC Rohden - Início{% endblock %}
+{% block content %}
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+    <h1 class="text-5xl font-bold text-cyan-400 mb-4">Plataforma de Inteligência de Mercado</h1>
+    <p class="text-xl text-gray-300">Prospecção Antecipada para a Rohden</p>
+  </div>
+
+  <!-- Cards de Destaque -->
+  <div class="grid md:grid-cols-3 gap-6 mb-12">
+    <div class="card-hover bg-gray-800 rounded-xl p-6 border border-cyan-500">
+      <div class="text-4xl mb-3">🎯</div>
+      <h3 class="text-xl font-bold text-cyan-400 mb-2">O Desafio</h3>
+      <p class="text-gray-300">Antecipar oportunidades de obras antes da concorrência, com dados confiáveis e em tempo real.</p>
+    </div>
+
+    <div class="card-hover bg-gray-800 rounded-xl p-6 border border-green-500">
+      <div class="text-4xl mb-3">💡</div>
+      <h3 class="text-xl font-bold text-green-400 mb-2">A Solução</h3>
+      <p class="text-gray-300">Plataforma digital que integra bases públicas e privadas para identificar obras em fase inicial.</p>
+    </div>
+
+    <div class="card-hover bg-gray-800 rounded-xl p-6 border border-purple-500">
+      <div class="text-4xl mb-3">📊</div>
+      <h3 class="text-xl font-bold text-purple-400 mb-2">Resultados</h3>
+      <p class="text-gray-300">+189% em obras identificadas e -73% no tempo de prospecção durante o período de testes.</p>
+    </div>
+  </div>
+
+  <!-- Contexto do Mercado -->
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-gray-700">
+    <h2 class="text-3xl font-bold text-cyan-400 mb-6">Contexto do Mercado</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="text-lg font-semibold text-green-400 mb-2">Oportunidades</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li>✓ PIB da construção cresceu 4,3% em 2024 (R$ 359,5 bi)</li>
+          <li>✓ Setor criou 559,5 mil vagas formais (2019-2023)</li>
+          <li>✓ Mercado de esquadrias movimenta R$ 12 bi/ano</li>
+          <li>✓ Crescente demanda por práticas ESG</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-yellow-400 mb-2">Desafios</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li>⚠ Pulverização: top 8 empresas têm apenas 3,3% do mercado</li>
+          <li>⚠ 82% das empresas têm dificuldade em contratar qualificados</li>
+          <li>⚠ Reforma tributária pode elevar carga em até 12,3%</li>
+          <li>⚠ Métodos tradicionais são lentos e limitados</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="text-center">
+    <a href="/como-funciona" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition">
+      Entenda Como Funciona →
+    </a>
+  </div>
+</div>
+{% endblock %}

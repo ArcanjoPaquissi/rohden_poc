@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block title %}Custos e ROI - POC Rohden{% endblock %}
+{% block content %}
+<div class="max-w-6xl mx-auto">
+  <h1 class="text-4xl font-bold text-cyan-400 mb-8">Análise de Custos e Retorno</h1>
+
+  <!-- Resumo Financeiro -->
+  <div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-gradient-to-br from-red-600 to-red-800 rounded-xl p-8 text-center">
+      <div class="text-5xl font-bold">R$ {{ custo_total }}k</div>
+      <div class="text-xl mt-2">Investimento Total (POC)</div>
+      <div class="text-sm text-red-200 mt-2">Período de 6 meses</div>
+    </div>
+
+    <div class="bg-gradient-to-br from-green-600 to-green-800 rounded-xl p-8 text-center">
+      <div class="text-5xl font-bold">{{ roi_estimado }}%</div>
+      <div class="text-xl mt-2">ROI Estimado</div>
+      <div class="text-sm text-green-200 mt-2">Retorno em 12 meses</div>
+    </div>
+  </div>
+
+  <!-- Gráfico de Custos -->
+  <div class="bg-gray-800 rounded-xl p-6 mb-8 border border-gray-700">
+    {{ graph|safe }}
+  </div>
+
+  <!-- Detalhamento de Custos -->
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-gray-700">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-6">💰 Detalhamento de Investimentos</h2>
+    <div class="space-y-4">
+      <div class="flex justify-between items-center p-4 bg-gray-900 rounded-lg">
+        <div>
+          <h3 class="font-bold text-cyan-400">Desenvolvimento Tecnológico</h3>
+          <p class="text-sm text-gray-400">Backend, frontend, integrações de API, banco de dados</p>
+        </div>
+        <div class="text-2xl font-bold">R$ 280k</div>
+      </div>
+
+      <div class="flex justify-between items-center p-4 bg-gray-900 rounded-lg">
+        <div>
+          <h3 class="font-bold text-green-400">Treinamento de Equipes</h3>
+          <p class="text-sm text-gray-400">Capacitação de vendedores, suporte técnico, materiais didáticos</p>
+        </div>
+        <div class="text-2xl font-bold">R$ 120k</div>
+      </div>
+
+      <div class="flex justify-between items-center p-4 bg-gray-900 rounded-lg">
+        <div>
+          <h3 class="font-bold text-purple-400">Infraestrutura Digital</h3>
+          <p class="text-sm text-gray-400">Servidores cloud, licenças de software, APIs de terceiros</p>
+        </div>
+        <div class="text-2xl font-bold">R$ 180k</div>
+      </div>
+
+      <div class="flex justify-between items-center p-4 bg-gray-900 rounded-lg">
+        <div>
+          <h3 class="font-bold text-yellow-400">Consultoria Regulatória e ESG</h3>
+          <p class="text-sm text-gray-400">Adequação à LGPD, auditoria de compliance, práticas sustentáveis</p>
+        </div>
+        <div class="text-2xl font-bold">R$ 170k</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projeção de Ganhos -->
+  <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-green-500">
+    <h2 class="text-2xl font-bold text-green-400 mb-6">📈 Projeção de Ganhos (12 meses)</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-900 p-6 rounded-lg text-center">
+        <div class="text-4xl font-bold text-cyan-400">R$ 1.8M</div>
+        <div class="text-sm text-gray-400 mt-2">Receita Adicional Estimada</div>
+        <p class="text-xs text-gray-500 mt-2">Base: +34 obras/trimestre × ticket médio R$ 130k</p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-lg text-center">
+        <div class="text-4xl font-bold text-green-400">R$ 420k</div>
+        <div class="text-sm text-gray-400 mt-2">Redução de Custos</div>
+        <p class="text-xs text-gray-500 mt-2">Eficiência operacional + menos desperdício comercial</p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-lg text-center">
+        <div class="text-4xl font-bold text-purple-400">R$ 2.2M</div>
+        <div class="text-sm text-gray-400 mt-2">Ganho Total Bruto</div>
+        <p class="text-xs text-gray-500 mt-2">Receita adicional + economia de custos</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Análise de Viabilidade -->
+  <div class="bg-gray-800 rounded-xl p-8 border border-cyan-500">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">🎯 Estudo de Viabilidade</h2>
+    <div class="space-y-4 text-gray-300">
+      <div>
+        <h3 class="font-bold text-green-400 mb-2">✓ Viabilidade Técnica</h3>
+        <p>
+          <strong>Confirmada.</strong> As tecnologias necessárias estão maduras e acessíveis. 
+          Integrações com bases públicas e privadas são viáveis via APIs REST. 
+          Stack sugerido: Python/Flask, PostgreSQL, React, AWS/Azure.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-green-400 mb-2">✓ Viabilidade Econômica</h3>
+        <p>
+          <strong>Positiva.</strong> Payback estimado em 8-10 meses. ROI de 245% no primeiro ano. 
+          Cenário conservador considera taxa de conversão de apenas 30% (observado: 38%).
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-yellow-400 mb-2">⚠ Viabilidade Operacional</h3>
+        <p>
+          <strong>Moderada.</strong> Requer mudança cultural na equipe comercial e treinamento contínuo. 
+          Risco mitigado com programa de change management e incentivos para early adopters.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-green-400 mb-2">✓ Viabilidade Regulatória</h3>
+        <p>
+          <strong>Atendida.</strong> Projeto em conformidade com LGPD desde o design. 
+          Uso exclusivo de dados públicos ou com consentimento explícito. 
+          Consultoria jurídica validou o modelo.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cenários -->
+  <div class="grid md:grid-cols-3 gap-6 mt-8">
+    <div class="bg-red-900 bg-opacity-30 border border-red-500 rounded-xl p-6">
+      <h3 class="text-xl font-bold text-red-400 mb-3">Cenário Pessimista</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>• ROI: 80%</li>
+        <li>• Conversão: 20%</li>
+        <li>• Payback: 18 meses</li>
+      </ul>
+      <p class="text-xs text-gray-400 mt-3">Mesmo no pior caso, projeto se paga em 1,5 anos</p>
+    </div>
+
+    <div class="bg-yellow-900 bg-opacity-30 border border-yellow-500 rounded-xl p-6">
+      <h3 class="text-xl font-bold text-yellow-400 mb-3">Cenário Realista</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>• ROI: 245%</li>
+        <li>• Conversão: 30%</li>
+        <li>• Payback: 10 meses</li>
+      </ul>
+      <p class="text-xs text-gray-400 mt-3">Base para decisão estratégica</p>
+    </div>
+
+    <div class="bg-green-900 bg-opacity-30 border border-green-500 rounded-xl p-6">
+      <h3 class="text-xl font-bold text-green-400 mb-3">Cenário Otimista</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>• ROI: 420%</li>
+        <li>• Conversão: 40%</li>
+        <li>• Payback: 6 meses</li>
+      </ul>
+      <p class="text-xs text-gray-400 mt-3">Possível se expansão para Sudeste ocorrer rapidamente</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-8">
+    <a href="/decisao" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg transition">
+      Ver Recomendação Final →
+    </a>
+  </div>
+</div>
+{% endblock %}
