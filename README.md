@@ -60,4 +60,4 @@ O objetivo da solução é substituir a prospecção manual e reativa por um flu
 ---
 
 ### 👤 Autor
-**Arcanjo Paquissi** — [LinkedIn](https://linkedin.com) | [GitHub](https://github.com)
+**Arcanjo Paquissi** — www.linkedin.com/in/arcanjo-paquissi-0b2816218 | https://github.com/ArcanjoPaquissi
