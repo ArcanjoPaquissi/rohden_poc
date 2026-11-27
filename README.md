@@ -16,11 +16,17 @@ O objetivo da solução é substituir a prospecção manual e reativa por um flu
 
 ---
 
+
 ### ⚙️ Arquitetura e Funcionalidades
-* **Coleta Automatizada (Web Scraping & APIs):** Extração contínua e estruturação de dados públicos e setoriais sobre novos empreendimentos e licitações.
-* **Tratamento e Estruturação de Dados:** Limpeza, padronização e cruzamento de informações relevantes para o perfil comercial da empresa.
-* **Radar Preditivo de Obras:** Identificação de padrões e priorização de leads com maior potencial de conversão.
-* **Dashboards Interativos & CRM:** Visualização estratégica de indicadores para apoio à tomada de decisão e integração com fluxo comercial.
+
+* **🌐 Coleta Automatizada (Web Scraping & APIs):** Extração contínua e estruturação de dados públicos e setoriais sobre novos empreendimentos e licitações.
+
+* **🧹 Tratamento e Estruturação de Dados:** Limpeza, padronização e cruzamento de informações relevantes para o perfil comercial da empresa.
+
+* **🎯 Radar Preditivo de Obras:** Identificação de padrões e priorização de leads com maior potencial de conversão.
+
+* **📊 Dashboards Interativos & CRM:** Visualização estratégica de indicadores para apoio à tomada de decisão e integração com fluxo comercial.
+
 
 ---
 
