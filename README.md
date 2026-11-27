@@ -1,10 +1,11 @@
+
 # 🏗️ Rohden POC — Plataforma Inteligente de Mercado
 
 > Ecossistema automatizado de coleta, tratamento e análise de dados para prospecção antecipada de obras no setor da construção civil.
 
-![Python](https://shields.io)
-![Data Engineering](https://shields.io)
-![Web Scraping](https://shields.io)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Data Engineering](https://img.shields.io/badge/Data_Engineering-0078D4?style=for-the-badge&logo=databricks&logoColor=white)
+![Web Scraping](https://img.shields.io/badge/Web_Scraping-2E8B57?style=for-the-badge&logo=googlechrome&logoColor=white)
 
 ---
 
