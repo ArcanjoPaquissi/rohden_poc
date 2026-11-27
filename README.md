@@ -1,21 +1,63 @@
-# 🏗️ POC Rohden - Plataforma de Inteligência de Mercado
+# 🏗️ Rohden POC — Plataforma Inteligente de Mercado
 
-## 📋 Sobre o Projeto
+> Ecossistema automatizado de coleta, tratamento e análise de dados para prospecção antecipada de obras no setor da construção civil.
 
-Prova de Conceito (POC) desenvolvida para a empresa Rohden como solução de prospecção antecipada de obras no mercado da construção civil. O sistema integra dados de múltiplas fontes para identificar oportunidades antes da concorrência.
-
-**Equipe:** Arcanjo, Gabriela, Raphael, Yasmin  
-**Instituição:** UFSC - Empreendedorismo II  
-**Desafio:** PROTALENT - FIESC 2025
+![Python](https://shields.io)
+![Data Engineering](https://shields.io)
+![Web Scraping](https://shields.io)
 
 ---
 
-## 🚀 Instalação Rápida
+### 📌 Sobre o Projeto
+Prova de Conceito (POC) desenvolvida no âmbito do **Programa PROTALENT (IEL/SC)** em parceria estratégica com a **Rohden**, e projeto **finalista no Demoday do Startup Mentoring (SINOVA/UFSC)**.
 
-### Pré-requisitos
+O objetivo da solução é substituir a prospecção manual e reativa por um fluxo automatizado de inteligência comercial, identificando oportunidades de obras antes da concorrência.
 
-- Python 3.8 ou superior
-- pip (gerenciador de pacotes Python)
+---
 
-### Passo 1: Clone ou baixe o projeto
-```bash
+### ⚙️ Arquitetura e Funcionalidades
+* **Coleta Automatizada (Web Scraping & APIs):** Extração contínua e estruturação de dados públicos e setoriais sobre novos empreendimentos e licitações.
+* **Tratamento e Estruturação de Dados:** Limpeza, padronização e cruzamento de informações relevantes para o perfil comercial da empresa.
+* **Radar Preditivo de Obras:** Identificação de padrões e priorização de leads com maior potencial de conversão.
+* **Dashboards Interativos & CRM:** Visualização estratégica de indicadores para apoio à tomada de decisão e integração com fluxo comercial.
+
+---
+
+### 🛠️ Tecnologias Utilizadas
+* **Linguagem:** Python
+* **Coleta e Manipulação de Dados:** Bibliotecas de Web Scraping, requisições HTTP/APIs e análise tabular
+* **Visualização:** Dashboards analíticos interativos
+
+---
+
+### 🚀 Como Executar Localmente
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com
+   cd rohden_poc
+   ```
+
+2. **Crie e ative um ambiente virtual:**
+   ```bash
+   python -m venv venv
+   # Windows:
+   venv\Scripts\activate
+   # Linux/Mac:
+   source venv/bin/activate
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Execute a aplicação:**
+   ```bash
+   python main.py
+   ```
+
+---
+
+### 👤 Autor
+**Arcanjo Paquissi** — [LinkedIn](https://linkedin.com) | [GitHub](https://github.com)
