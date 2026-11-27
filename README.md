@@ -23,10 +23,20 @@ O objetivo da solução é substituir a prospecção manual e reativa por um flu
 
 ---
 
+
 ### 🛠️ Tecnologias Utilizadas
-* **Linguagem:** Python
-* **Coleta e Manipulação de Dados:** Bibliotecas de Web Scraping, requisições HTTP/APIs e análise tabular
-* **Visualização:** Dashboards analíticos interativos
+
+- **Linguagem:** Python
+- **Coleta e Manipulação de Dados:** Web Scraping, requisições HTTP/APIs e análise tabular
+- **Visualização:** Dashboards analíticos interativos
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python" />
+  <img src="https://skillicons.dev/icons?i=fastapi" />
+  <img src="https://skillicons.dev/icons?i=pandas" />
+  <img src="https://skillicons.dev/icons?i=plotly" />
+</p>
+
 
 ---
 
